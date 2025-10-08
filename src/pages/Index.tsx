@@ -192,7 +192,7 @@ const Index = () => {
               location: "Rio de Janeiro - RJ",
               problem: "Conflitos familiares constantes",
               testimonial: "As brigas em casa eram diárias por causa do celular. Meu filho de 14 anos ficava agressivo quando pedíamos para largar o telefone. Aplicamos o método passo a passo e em menos de um mês tivemos uma conversa saudável de pai e filho depois muito tempo! O questionário de progresso foi fundamental para avançarmos!",
-              solution: "Método completo + Grupo VIP (Premium)",
+              solution: "Questionário de Progresso",
               result: "4 semanas"
             }, {
               initials: "AC",
