@@ -159,30 +159,7 @@ const Index = () => {
       </section>
 
       {/* Solution Section */}
-      <section className="py-20 px-4 bg-background">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-3xl md:text-5xl font-bold mb-12 text-foreground">O Método de 4 Etapas que Transforma</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            {[{
-            icon: Heart,
-            title: "Reconexão Familiar",
-            desc: "Fortaleça os laços com seu filho"
-          }, {
-            icon: Brain,
-            title: "Foco e Concentração",
-            desc: "Melhore o desempenho escolar"
-          }, {
-            icon: Smartphone,
-            title: "Uso Consciente",
-            desc: "Equilíbrio saudável com a tecnologia"
-          }].map((item, i) => <Card key={i} className="p-8 shadow-card animate-fade-in">
-                <item.icon className="w-16 h-16 text-primary mx-auto mb-4" />
-                <h3 className="font-bold text-xl mb-3 text-foreground">{item.title}</h3>
-                <p className="text-muted-foreground">{item.desc}</p>
-              </Card>)}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Testimonials */}
       <section className="py-20 px-4 bg-gradient-section">
