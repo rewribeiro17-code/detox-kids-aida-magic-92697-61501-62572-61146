@@ -4,6 +4,7 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import FloatingNotification from "@/components/FloatingNotification";
 import { AlertTriangle, Brain, TrendingDown, Users, Award, BookOpen, Heart, Smartphone, CheckCircle2, Gift, Shield, Calendar, Globe, Sparkles, X, Crown, Zap, Target, ClipboardList } from "lucide-react";
 import isabellaPhoto from "@/assets/isabella-centeno.png";
+import fabioTestimonial from "@/assets/fabio-r-testimonial.jpeg";
 const Index = () => {
   const scrollToPrice = () => {
     document.getElementById("pricing")?.scrollIntoView({
@@ -216,8 +217,17 @@ const Index = () => {
                   <Card className="p-8 md:p-10 shadow-soft">
                     <div className="flex flex-col items-center text-center">
                       {/* Avatar */}
-                      <div className="w-20 h-20 rounded-full bg-gradient-to-br from-primary to-aqua flex items-center justify-center mb-4">
-                        <span className="text-white font-bold text-xl">{testimonial.initials}</span>
+                      <div className="w-20 h-20 rounded-full overflow-hidden mb-4 shadow-soft">
+                        <img 
+                          src={i === 0 ? fabioTestimonial : undefined} 
+                          alt={testimonial.name}
+                          className={i === 0 ? "w-full h-full object-cover" : "hidden"}
+                        />
+                        {i !== 0 && (
+                          <div className="w-full h-full bg-gradient-to-br from-primary to-aqua flex items-center justify-center">
+                            <span className="text-white font-bold text-xl">{testimonial.initials}</span>
+                          </div>
+                        )}
                       </div>
                       
                       {/* Name and Location */}
