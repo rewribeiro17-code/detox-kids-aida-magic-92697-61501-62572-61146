@@ -175,7 +175,7 @@ const Index = () => {
               name: "Fábio R.",
               location: "Belo Horizonte - MG",
               problem: "Queda nas notas escolares",
-              testimonial: "As notas do meu filho caíram drasticamente e ele não conseguia se concentrar nos estudos. Investir na Versão Premium foi a melhor decisão! O Planejador de Atividades Offline ajudou ele a se organizar e criar uma rotina saudável. Em 2 meses as notas subiram e ele está muito mais focado. Valeu cada centavo!",
+              testimonial: "As notas do meu filho caíram drasticamente e ele não conseguia se concentrar nos estudos. Investir na Versão Premium foi a melhor decisão! O Modo Foco ajudou demais para ele ter mais disciplina. Em 2 meses as notas subiram e ele está muito mais focado. Valeu cada centavo!",
               solution: "Planejador de Atividades Offline (Premium)",
               result: "2 meses"
             }, {
