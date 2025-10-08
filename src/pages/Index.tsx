@@ -168,7 +168,9 @@ const Index = () => {
             Histórias Reais: Pais Que Aplicaram o Método e Presenciaram a Transformação na Vida de Seus Filhos
           </h2>
           
-          <Carousel className="max-w-4xl mx-auto">
+          <Carousel className="max-w-4xl mx-auto" opts={{
+          loop: true
+        }}>
             <CarouselContent>
               {[{
               initials: "FR",
