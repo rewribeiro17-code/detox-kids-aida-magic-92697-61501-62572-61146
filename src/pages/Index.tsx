@@ -183,7 +183,7 @@ const Index = () => {
               name: "Mariana C.",
               location: "São Paulo - SP",
               problem: "Ansiedade e isolamento social",
-              testimonial: "Minha filha passava mais de 8 horas por dia no celular e estava com crises de ansiedade. O Método Desintoxicação Digital mudou nossa vida! Começamos a fazer as atividades em família sugeridas no e-book de Atenção Plena e ela voltou a sorrir. Hoje ela sai com amigas e recuperou a alegria de viver.",
+              testimonial: "Minha filha passava mais de 8 horas por dia no celular e estava com crises de ansiedade. O Método Desintoxicação Digital mudou nossa vida! Começamos a fazer as atividades em família sugeridas no Guia de Atenção Plena e ela melhorou drasticamente!",
               solution: "E-book: Atenção Plena em Família",
               result: "3 semanas"
             }, {
