@@ -6,6 +6,7 @@ import { AlertTriangle, Brain, TrendingDown, Users, Award, BookOpen, Heart, Smar
 import isabellaPhoto from "@/assets/isabella-centeno.png";
 import fabioTestimonial from "@/assets/fabio-r-testimonial.jpeg";
 import marianaTestimonial from "@/assets/mariana-c-testimonial.jpg";
+import robertoTestimonial from "@/assets/roberto-s-testimonial.jpg";
 const Index = () => {
   const scrollToPrice = () => {
     document.getElementById("pricing")?.scrollIntoView({
@@ -220,11 +221,11 @@ const Index = () => {
                       {/* Avatar */}
                       <div className="w-20 h-20 rounded-full overflow-hidden mb-4 shadow-soft">
                         <img 
-                          src={i === 0 ? fabioTestimonial : i === 1 ? marianaTestimonial : undefined} 
+                          src={i === 0 ? fabioTestimonial : i === 1 ? marianaTestimonial : i === 2 ? robertoTestimonial : undefined} 
                           alt={testimonial.name}
-                          className={i === 0 || i === 1 ? "w-full h-full object-cover" : "hidden"}
+                          className={i === 0 || i === 1 || i === 2 ? "w-full h-full object-cover" : "hidden"}
                         />
-                        {i !== 0 && i !== 1 && (
+                        {i > 2 && (
                           <div className="w-full h-full bg-gradient-to-br from-primary to-aqua flex items-center justify-center">
                             <span className="text-white font-bold text-xl">{testimonial.initials}</span>
                           </div>
