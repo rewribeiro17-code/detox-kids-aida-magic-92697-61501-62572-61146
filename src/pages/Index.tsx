@@ -5,6 +5,7 @@ import FloatingNotification from "@/components/FloatingNotification";
 import { AlertTriangle, Brain, TrendingDown, Users, Award, BookOpen, Heart, Smartphone, CheckCircle2, Gift, Shield, Calendar, Globe, Sparkles, X, Crown, Zap, Target, ClipboardList } from "lucide-react";
 import isabellaPhoto from "@/assets/isabella-centeno.png";
 import fabioTestimonial from "@/assets/fabio-r-testimonial.jpeg";
+import marianaTestimonial from "@/assets/mariana-c-testimonial.jpg";
 const Index = () => {
   const scrollToPrice = () => {
     document.getElementById("pricing")?.scrollIntoView({
@@ -219,11 +220,11 @@ const Index = () => {
                       {/* Avatar */}
                       <div className="w-20 h-20 rounded-full overflow-hidden mb-4 shadow-soft">
                         <img 
-                          src={i === 0 ? fabioTestimonial : undefined} 
+                          src={i === 0 ? fabioTestimonial : i === 1 ? marianaTestimonial : undefined} 
                           alt={testimonial.name}
-                          className={i === 0 ? "w-full h-full object-cover" : "hidden"}
+                          className={i === 0 || i === 1 ? "w-full h-full object-cover" : "hidden"}
                         />
-                        {i !== 0 && (
+                        {i !== 0 && i !== 1 && (
                           <div className="w-full h-full bg-gradient-to-br from-primary to-aqua flex items-center justify-center">
                             <span className="text-white font-bold text-xl">{testimonial.initials}</span>
                           </div>
