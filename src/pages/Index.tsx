@@ -409,7 +409,7 @@ const Index = () => {
                 <p className="text-foreground font-semibold">Valor Total dos Bônus</p>
               </div>
               <p className="text-5xl font-bold text-coral mb-2">R$ 350,00</p>
-              <p className="text-muted-foreground text-sm">Grátis para os primeiros 100 compradores</p>
+              <p className="text-muted-foreground text-sm">Grátis Para os 100 Primeiros Que Adquirirem o Método</p>
             </Card>
           </div>
         </div>
