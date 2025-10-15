@@ -7,6 +7,7 @@ import isabellaPhoto from "@/assets/isabella-centeno.png";
 import fabioTestimonial from "@/assets/fabio-r-testimonial.jpeg";
 import marianaTestimonial from "@/assets/mariana-c-testimonial.jpg";
 import robertoTestimonial from "@/assets/roberto-s-testimonial.jpg";
+import anaClaraTestimonial from "@/assets/DE R$59,90 POR 29,90 (4).png";
 const Index = () => {
   const scrollToPrice = () => {
     document.getElementById("pricing")?.scrollIntoView({
@@ -220,12 +221,12 @@ const Index = () => {
                     <div className="flex flex-col items-center text-center">
                       {/* Avatar */}
                       <div className="w-20 h-20 rounded-full overflow-hidden mb-4 shadow-soft">
-                        <img 
-                          src={i === 0 ? fabioTestimonial : i === 1 ? marianaTestimonial : i === 2 ? robertoTestimonial : undefined} 
+                        <img
+                          src={i === 0 ? fabioTestimonial : i === 1 ? marianaTestimonial : i === 2 ? robertoTestimonial : i === 3 ? anaClaraTestimonial : undefined}
                           alt={testimonial.name}
-                          className={i === 0 || i === 1 || i === 2 ? "w-full h-full object-cover" : "hidden"}
+                          className={i <= 3 ? "w-full h-full object-cover" : "hidden"}
                         />
-                        {i > 2 && (
+                        {i > 3 && (
                           <div className="w-full h-full bg-gradient-to-br from-primary to-aqua flex items-center justify-center">
                             <span className="text-white font-bold text-xl">{testimonial.initials}</span>
                           </div>
